@@ -1,0 +1,6 @@
+https://blog.csdn.net/wzhwei1987/article/details/84102589
+
+查看nginx配置是否出错
+sudo nginx -t
+
+安装好了启动不了 很可能是防火墙的原因

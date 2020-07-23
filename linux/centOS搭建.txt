@@ -1,0 +1,18 @@
+﻿
+激活虚拟环境  source venv/bin/activate
+
+退出虚拟环境deactivate
+
+运行 uwsgi --http :80 --chdir /home/django/my --home=/home/django/venv --module my.wsgi
+
+https://cloud.tencent.com/developer/labs/lab/10372
+
+
+
+简单介绍虚拟机的几种网络连接：
+桥接模式：从外界来看，虚拟机（Ubuntu），宿主机（Windows），是两台电脑。
+NAT模式：从外界来看，虚拟机（Ubuntu），宿主机（Windows），是同一台电脑。
+仅主机模式：虚拟机（Ubuntu）只能与宿主机（Windows）通信，虚拟机无法访问外网。
+
+安装uwsgi 缺少python.h 头文件
+sudo apt-get install python3.6-dev

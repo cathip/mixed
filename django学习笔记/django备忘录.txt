@@ -1,0 +1,22 @@
+﻿账号cat 密码Kirino11
+
+python runserver manage.py 0.0.0.0:8000 简写 0:8000  侦听所有可用的公共IP
+
+django项目流程 
+例：
+创建项目 django-admin startproject Hello
+创建app django-admin startapp HHH
+一个项目可以有多个app  一个app可以包含在多个项目中 
+应用程序是执行某些操作的Web应用程序
+项目是特定网站的配置和应用程序的集合。
+项目可以包含多个应用程序，一个应用程序可以在多个项目中。
+
+
+python manage.py makemigrations polls
+python manage.py sqlmigrate polls 0001 （用来检查sql语句）
+python manage.py migrate
+
+三步指南：
+更改模型（in models.py）
+运行以创建这些更改的迁移python manage.py makemigrations
+运行以将这些更改应用于数据库。python manage.py migrate

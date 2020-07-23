@@ -1,0 +1,14 @@
+﻿App文件夹下 models定义了数据库建表模型 例如：
+
+数据类型参考资料	http://www.runoob.com/sqlite/sqlite-data-types.html
+
+#生成迁移文件
+python manage.py makemigrations
+#执行迁移
+python manage.py migrate
+
+class Person(models.Model):
+	name = models.CharField(max_length=20)
+	age = models.CharField(max_lenth=10)
+	phone = models.CharField(max_lenth=11)
+	hob = models.CharField(max_lenth=10)

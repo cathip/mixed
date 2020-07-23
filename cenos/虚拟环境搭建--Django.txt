@@ -1,0 +1,16 @@
+﻿yum install nginx
+systemctl start nginx.service
+systemctl enable nginx.service
+
+yum install https://centos7.iuscommunity.org/ius-release.rpm -y 
+yum install python36u  -y
+yum install python36u-pip python36u-devel  -y
+
+cd /home/
+mkdir django
+cd django
+python3.6 -m venv venv
+deactivate 退出虚拟环境
+
+还是在windows cmd下操作：
+进入到Scripts,执行activate.bat，如下图表示激活成功

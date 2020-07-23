@@ -1,0 +1,2 @@
+类型 timestamp
+默认 CURRENT_TIMESTAMP
